@@ -1,0 +1,144 @@
+/* Header Styles */
+#banner{
+    width: 100vw;
+    height: 450px;
+    margin: 0;
+    padding: 55px 0 0 0;
+    position: relative;
+    background-size: 250px;
+    background-color: #5fe4e4;
+    z-index: 0;
+}
+
+#banner + svg{
+    margin-top: -60px;
+    size: cover;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+#banner p{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+#worldIconHeader {
+    top: calc(50% - 30px);
+    left: 150px;
+    font-size: 120px;
+    line-height: 120px;
+}
+
+#planeIconHeader {
+    top: calc(50% - 120px);
+    left: 190px;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+#guitarIconHeader {
+    top: calc(50% - 30px);
+    left: calc(50% - 120px);
+    font-size: 120px;
+    line-height: 120px;
+}
+
+#microphoneIconHeader {
+    top: calc(50% - 15px);
+    left: calc(50% + 45px);
+    font-size: 90px;
+    line-height: 90px;
+}
+
+#laptopIconHeader {
+    top: calc(50% - 110px);
+    right: 150px;
+    font-size: 100px;
+    line-height: 100px;
+}
+
+#desktopIconHeader {
+    top: calc(50% + 90px);
+    right: 150px;
+    font-size: 100px;
+    line-height: 100px;
+}
+
+#keyboardIconHeader {
+    top: calc(50% + 10px);
+    right: 170px;
+    font-size: 60px;
+    line-height: 60px;
+}
+
+/* Main Section Styles */
+main{
+    margin: 0;
+    padding: 0;
+}
+
+main > section {
+    text-align: center;
+    text-align-last: center;
+}
+
+main > section > h2{
+    margin: 0 auto;
+    font-size: 45px;
+    font-weight: 300;
+    width: 70%;
+}
+
+#aboutMe{
+    margin-top: -150px;
+    margin-bottom: -300px;
+    padding: 130px 20px 300px;
+    background-color:#F9C784;
+    color: black;
+}
+
+#aboutMe p {
+    margin: 40px auto 0 auto;
+    width: 70%;
+}
+
+#aboutMe + svg{
+    margin: 0;
+    padding: 0;
+}
+
+#projects{
+    background-color:#F34213;
+    color: white;
+    margin-top: -40px;
+    height: 900px;
+}
+
+#projects + svg{
+    margin-top: -300px;
+}
+
+#contact{
+    margin-top: -44.5px;
+    background-color:#187795;
+    color: white;
+    height: 300px;
+    position: relative;
+}
+
+#contact h2{
+    position: absolute;
+    top: -70px;
+    width: 100%;
+}
+
+footer{
+    background-color: #1C110A;
+    height: 50px;
+    width: 100%;
+    margin: -20px 0 -10px 0;
+    left: 0;
+    padding: 0;
+}

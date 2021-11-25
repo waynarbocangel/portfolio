@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 214, 214);
+}
+
+#body{
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#bodyBackgroundTop{
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 50vh;
+    background-color: #5fe4e4;
+    position:fixed;
+    z-index: -1;
+}
+
+#bodyBackgroundBottom{
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 50vh;
+    background-color: #1C110A;
+    position:fixed;
+    z-index: -2;
+}
+
+/* Header Styles */
+
+/* Navigation Bar */
+#topBar {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 214, 214);
+    color: white;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+#title {
+    font-family: 'Yellowtail', cursive;
+    font-weight: 100;
+    font-size: 25px;
+    width: 300px;
+    margin: 10px 0 0 20px;
+    cursor: pointer;
+    opacity: 0.95;
+}
+
+#title:hover{
+    opacity: 1;
+}
+
+#mainNavigation {
+    width: calc(100vw - 320px);
+}
+
+#mainNavigation ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin: 17px 0 20px 0;
+    padding: 0;
+    width: calc(100vw - 340px);
+}
+
+#mainNavigation ul > li{
+    padding: 0 20px 0 25px;
+}
+
+#mainNavigation ul > li a{
+    font-weight: 300;
+    opacity: 0.7;
+    transition: 15ms ease-in-out;
+}
+
+#mainNavigation ul > li a.selected{
+    opacity: 1;
+}
+
+#mainNavigation ul > li a:hover {
+    opacity: 1;
+    transition: 15ms ease-in-out;
+}
+
+footer{
+    background-color: white;
+}
