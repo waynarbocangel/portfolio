@@ -21,7 +21,7 @@ if (cookies.getCookie("isAuthenticated") == "true"){
 loadProjects(projectCards, "editing");
 
 logOut.onclick = () => {
-    cookies.eraseCookie("isAuthorized");
+    cookies.eraseCookie("isAuthenticated");
     cookies.eraseCookie("username");
     cookies.eraseCookie("connect.sid");
     window.location.href = "/";
