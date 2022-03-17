@@ -1,82 +1,166 @@
 /* Header Styles */
+header{
+    position: relative;
+    z-index: 20;
+}
+
 #banner{
     width: 100vw;
     height: 450px;
     margin: 0;
     padding: 55px 0 0 0;
     position: relative;
-    background-size: 250px;
-    background-color: #5fe4e4;
-    z-index: 0;
+    background-color: #5fe4e400;
+    z-index: 20;
 }
 
-#banner + svg{
-    margin-top: -60px;
-    size: cover;
-    overflow-y: hidden;
-    position: relative;
-    z-index: 1;
-}
-
-#banner p{
-    position: absolute;
+#bannerFirst{
+    top: 60px;
     margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    position: absolute;
+    z-index: 11;
+}
+
+#bannerSecondBefore{
+    top: 60px;
+    width: 100vw;
+    height: 112.5px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(24,218,218);
+    position: absolute;
+    z-index: 8;
+}
+
+#bannerSecond{
+    top: 172.5px;
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    position: absolute;
+    z-index: 8;
+}
+
+#bannerThirdBefore{
+    top: 172.5px;
+    width: 100vw;
+    height: 112.5px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:rgb(48,221,221);
+    position: absolute;
+    z-index: 7;
+}
+
+#bannerThird{
+    top: 285px;
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    position: absolute;
+    z-index: 7;
+}
+
+#bannerFourthBefore{
+    top: 285px;
+    width: 100vw;
+    height: 112.5px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:rgb(71,225,225);
+    position: absolute;
+    z-index: 6;
+}
+
+#bannerFourth{
+    top: 397.5px;
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    position: absolute;
+    z-index: 5;
+}
+
+#bannerFifthBefore{
+    top: 397.5px;
+    width: 100vw;
+    height: 107.5px;
+    margin: 0 0 -100%;
+    padding: 0;
+    overflow: hidden;
+    background-color:rgb(95,228,228);
+    position: absolute;
+    z-index: 3;
+}
+
+#bannerFifth{
+    margin: 0;
+    overflow-y: hidden;
+    z-index: 30 !important;
+}
+
+#banner > div{
+    margin-top: 3vw;
+    z-index: 40;
+}
+
+#banner > div div{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner span{
+    /* position: absolute; */
     padding: 0;
 }
 
-#worldIconHeader {
-    top: calc(50% - 30px);
-    left: 150px;
-    font-size: 120px;
-    line-height: 120px;
+#banner h1{
+    color: white;
+    font-size: 2em;
+    width: 30vw;
+    text-align: center;;
 }
 
-#planeIconHeader {
-    top: calc(50% - 120px);
-    left: 190px;
-    font-size: 40px;
-    line-height: 40px;
+#worldIconHeader {
+    font-size: 120px;
+    line-height: 120px;
 }
 
 #guitarIconHeader {
-    top: calc(50% - 30px);
-    left: calc(50% - 120px);
+    margin-left: calc(50% - 180px);
+    margin-right: 120px;
     font-size: 120px;
-    line-height: 120px;
+    line-height: 132px;
 }
 
 #microphoneIconHeader {
-    top: calc(50% - 15px);
-    left: calc(50% + 45px);
     font-size: 90px;
     line-height: 90px;
 }
 
 #laptopIconHeader {
-    top: calc(50% - 110px);
-    right: 150px;
     font-size: 100px;
     line-height: 100px;
 }
 
 #desktopIconHeader {
-    top: calc(50% + 90px);
-    right: 150px;
+    margin-left: calc(50% - 45px);
     font-size: 100px;
     line-height: 100px;
-}
-
-#keyboardIconHeader {
-    top: calc(50% + 10px);
-    right: 170px;
-    font-size: 60px;
-    line-height: 60px;
 }
 
 /* Main Section Styles */
 main{
     margin: 0;
     padding: 0;
+    z-index: -1 !important;
 }
 
 main > section {
@@ -86,59 +170,242 @@ main > section {
 
 main > section > h2{
     margin: 0 auto;
-    font-size: 45px;
+    font-size: 65px;
     font-weight: 300;
     width: 70%;
+    color: white;
 }
 
 #aboutMe{
-    margin-top: -150px;
-    margin-bottom: -300px;
-    padding: 130px 20px 300px;
-    background-color:#F9C784;
-    color: black;
+    margin-top: calc(-1.3 * (100vw * (96/1440)));
+    margin-bottom: -900px;
+    padding: calc((1.3 * (100vw * (96/1440))) + 25px) 20px 920px;
+    background-color: var(--about-background);
+    position: relative;
+    color: white;
+    z-index: 0;
+}
+
+#aboutMe h2 {
+    margin-bottom: 2vw;
+    color: white;
 }
 
 #aboutMe p {
-    margin: 40px auto 0 auto;
-    width: 70%;
+    margin: 40px 0 0 ;
+    width: 900px;
+    font-size: 25px;
+    text-align: justify;
+    color: white;
+}
+
+#greeting{
+    color: white;
+    font-size: 45px;
+    font-weight: 300;
+}
+
+#aboutMe img{
+    border-radius: 10%;
+    margin-left: 10%;
+    margin-top: 50px;
+    width: 20vw;
+}
+
+#aboutMeContent{
+    color: white;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+#aboutMeBackground{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: calc(100% + ((288.006 / 1440) * 100vw));
+    background: url("../../resources/sandtexture.png");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 200px 260px;
+    z-index: -10 !important;
+    opacity: 1;
 }
 
 #aboutMe + svg{
-    margin: 0;
+    margin: 0 0 -17px 0;
     padding: 0;
+    position: relative;
+    z-index: 1;
 }
 
 #projects{
-    background-color:#F34213;
+    background-color: var(--projects-background);
     color: white;
-    margin-top: -40px;
+    margin-top: 0;
+    margin-bottom: 0;
     height: 900px;
+    position:relative;
+    z-index: 1;
 }
 
 #projects + svg{
-    margin-top: -300px;
+    margin: 0 0 0;
+    padding: 0 0 10px;
+    background-color: #F34213;
+    position: relative;
+    z-index: 2;
+}
+
+#projects h3{
+    color: white;
+}
+
+#projectCards {
+    width: calc(100% - 20px);
+    height: 600px;
+    margin-top: 50px;
+    padding-left: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    overflow-x: auto;
 }
 
 #contact{
-    margin-top: -44.5px;
-    background-color:#187795;
+    margin-top: -17px;
+    padding: 0;
+    background-color: var(--contact-background);
     color: white;
-    height: 300px;
+    height: 600px;
     position: relative;
+    z-index: 2;
 }
 
 #contact h2{
-    position: absolute;
-    top: -70px;
     width: 100%;
 }
 
-footer{
-    background-color: #1C110A;
-    height: 50px;
-    width: 100%;
-    margin: -20px 0 -10px 0;
-    left: 0;
-    padding: 0;
+#contact p {
+    color: white;
+}
+
+#contactWrapper{
+    text-align: center;
+}
+
+.badge-base{
+    margin-top: 20px;
+    margin-left: calc(50% - 132px);
+}
+
+/* Fluidity support */
+@media only screen and (max-width: 2100px) {
+    #aboutMe img{
+        margin-left: 0;
+        flex-basis: 30vw;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    main > section > h2{
+        font-size: 55px;
+    }
+
+    #aboutMe p{
+        font-size: 22px;
+    }
+
+    #aboutMe img{
+        width: 30vw;
+        margin-left: 0;
+    }
+
+    #greeting{
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    #aboutMe p{
+        font-size: 22px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #banner h1{
+        width: 40vw;
+        margin: 0 20px;
+    }
+
+    #aboutMe img{
+        width: 35vw;
+        margin-left: 0;
+    }
+
+    #greeting{
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #banner > div {
+        margin-top: 15vw;
+    }
+
+    #banner h1{
+        font-size: 1.6em;
+    }
+
+    #worldIconHeader {
+        font-size: 60px;
+        line-height: 60px;
+    }
+    
+    #guitarIconHeader {
+        margin-left: calc(50% - 90px);
+        margin-right: 40px;
+        font-size: 80px;
+        line-height: 80px;
+    }
+    
+    #microphoneIconHeader {
+        font-size: 60px;
+        line-height: 60px;
+    }
+    
+    #laptopIconHeader {
+        font-size: 50px;
+        line-height: 50px;
+    }
+    
+    #desktopIconHeader {
+        margin-left: calc(50% - 35px);
+        font-size: 70px;
+        line-height: 70px;
+    }
+
+    main > section > h2{
+        font-size: 35px;
+    }
+
+    #aboutMe p{
+        font-size: 17px;
+    }
+
+    #aboutMe img{
+        width: 50vw;
+    }
+
+    #greeting{
+        font-size: 25px;
+    }
 }

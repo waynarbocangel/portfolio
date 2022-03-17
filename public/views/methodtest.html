@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waynar Bocangel Calderon - Method Test</title>
+    <style>
+        output{
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <form title="New Article: ">
+        <fieldset><legend>New Article: </legend>
+            <label for="formId">ID: </label>
+            <input type="text" name="formId" id="formId"><br>
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name"><br>
+            <label for="body">Body: </label><br>
+            <textarea name="body" id="body" cols="30" rows="10"></textarea><br>
+            <input type="date" id="date" disabled><br>
+            <button id="post">Post</button>
+            <button id="get">Get</button>
+            <button id="put">Put</button>
+            <button id="delete">Delete</button>
+        </fieldset>
+    </form>
+    <output id="response"></output>
+    <script type="module" src="./controllers/methodtest.js"></script>
+</body>
+</html>

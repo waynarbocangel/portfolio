@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waynar Bocangel Calderon - Log In</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Yellowtail&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./views/styles/auth.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1><a id="chevron" href="/">&#10094; </a><a id="text" href="/">Back to site</a></h1>
+    </header>
+    <main>
+        <section>
+            <h2>Waynar Bocangel Calderon</h2>
+            <h3>Log in only if you have the keys to the kingdom!</h3>
+        </section>
+        <aside>
+            <form action="POST">
+                <h1>Log In</h1>
+                <input type="text" id="email" name="email" placeholder="E-mail"><br>
+                <input type="password" id="password" name="password" placeholder="Password"><br>
+                <input type="submit" id="login" value="Log In">
+            </form>
+        </aside>
+    </main>
+    <script type="module" src="./controllers/auth.js"></script>
+</body>
+</html>
