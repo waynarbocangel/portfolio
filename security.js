@@ -31,10 +31,6 @@ function authenticate (email, password, callback){
     });
 }
 
-authenticate("waynarbocangel@gmail.com", "valepedrowaynar", (success, err) => {
-    console.log(err);
-});
-
 module.exports = {
     authenticate: authenticate,
     admin: admin
