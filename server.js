@@ -87,7 +87,6 @@ app.post("/api/authenticate", (req, res) => {
 
 app.get("/projects", (req, res) => {
 	content.getProjects((projects) => {
-		console.log(projects);
 		res.send(JSON.stringify({projects: projects}));
 	});
 });

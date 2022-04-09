@@ -268,7 +268,6 @@ export class ProjectCard extends HTMLElement{
         }
         
         this.deleteButton.onclick = () => {
-            console.log("should delete");
             updateProjects({project: this.project}, "DELETE", (success) => {
                 if (success) {
                     removeProject(this.project, this.parentElement);
