@@ -384,9 +384,10 @@ export class Project extends HTMLElement{
 
         this.removeLink = (deleteLink) => {
             let count = 0;
-            while (count < this.project.links.length){
-                if (this.project.links[count].name == deleteLink.name && this.project.links[count].address == deleteLink.address){
-                    this.project.links.splice(count, 1);
+            while (count < this.newlinks.length){
+                if (this.newlinks[count].name == deleteLink.name && this.newlinks[count].address == deleteLink.address){
+                    this.newlinks.splice(count, 1);
+                    console.log(this.project.links);
                     break;
                 }
                 count += 1;

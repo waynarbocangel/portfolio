@@ -178,6 +178,7 @@ template.innerHTML = `
             width: calc(100% - 60.064px);
             margin: 0 0 0 10px;
             overflow-wrap: break-word;
+            text-align: left;
         }
 
         .linkSection{
